@@ -1,0 +1,28 @@
+.form {
+  margin-bottom: 20px;
+
+  input:not([type="submit"]) {
+    padding: 5px;
+    border: 0;
+    margin-right: 10px;
+  }
+
+  input.error {
+    box-shadow: 0 0 5px red;
+  }
+
+  input.correct {
+    box-shadow: 0 0 5px green;
+  }
+
+  ul {
+    margin: 0 0 15px;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    margin: 0 0 10px;
+  }
+
+}

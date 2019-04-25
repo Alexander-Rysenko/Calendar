@@ -1,0 +1,50 @@
+.main-title {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.calendar-box {
+  display: flex;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.time {
+  max-width: 70px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 200;
+  color: #999999;
+  line-height: 0.7;
+  &:nth-child(even) {
+    font-size: 12px;
+  }
+}
+
+.event-box {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.event {
+  position: absolute;
+  width: 200px;
+  min-height: 20px;
+  font-size: 14px;
+  color: #444444;
+  background-color: #E2ECF5;
+  border-left: 3px solid #6E9ECF;
+}
+
+.event-remove {
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

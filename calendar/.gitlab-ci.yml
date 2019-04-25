@@ -1,0 +1,26 @@
+image: node:10
+stages: 
+  - ESLint checks
+  - Create-React-App build
+cache:
+  paths:
+   - node_modules/
+
+before_script:
+   - npm install
+
+ESLint check:
+  stage: ESLint checks
+  script: 
+    - npm run lint:check
+  only:
+    refs:
+      - merge_requests
+
+App build:
+  stage: Create-React-App build
+  script:
+    - npm run deploy
+  only:
+    refs:
+      - merge_requests

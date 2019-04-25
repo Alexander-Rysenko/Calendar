@@ -1,0 +1,39 @@
+{
+  "name": "koajsBaseApp",
+  "version": "1.0.0",
+  "description": "A simple Koajs 2 REST Application",
+  "author": {
+    "name": "Rysenko Alexander",
+    "email": "rysenkoalexander@gmail.com"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jsonfile": "^5.0.0",
+    "koa": ">=2.7.x",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.0",
+    "koa-passport": "^4.1.3",
+    "koa-route": "^3.2.0",
+    "koa-router": ">=7.x.x",
+    "koa-session2": "^2.2.10",
+    "koa2-cors": "^2.0.6",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "koa-static": "^5.0.0",
+    "nodemon": "^1.18.11"
+  },
+  "scripts": {
+    "start": "node --harmony app/index.js",
+    "start:dev": "node_modules/.bin/nodemon --harmony app/index.js"
+  }
+}
