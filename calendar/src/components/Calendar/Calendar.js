@@ -13,7 +13,6 @@ export class Calendar extends PureComponent {
     this.props.remove(data);
   };
 
-
   generateEvents = () => {
     const { events } = this.props.user;
 
