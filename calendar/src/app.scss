@@ -1,7 +1,7 @@
 @import "variables";
 
 body {
-  background: $main-bg;
+  background: lighten(#00f, 30%) url('/images/main-bg.jpg');
   margin: 0;
 }
 
